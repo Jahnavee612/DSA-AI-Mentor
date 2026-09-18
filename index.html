@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DSA AI Mentor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">⌘</div>
+
+                <div>
+                    <h2>DSA Mentor</h2>
+                    <span>AI Instructor</span>
+                </div>
+            </div>
+
+            <button class="new-chat" id="newChatButton">
+                + New Question
+            </button>
+
+            <div class="sidebar-section">
+                <p class="section-title">POPULAR TOPICS</p>
+
+                <button class="topic" data-question="Explain arrays in simple terms">📦 Arrays</button>
+                <button class="topic" data-question="Explain strings in Data Structures">🔤 Strings</button>
+                <button class="topic" data-question="Explain linked list in simple terms">🔗 Linked List</button>
+                <button class="topic" data-question="Explain binary search with an example">🔍 Binary Search</button>
+                <button class="topic" data-question="Explain two pointers technique">↔️ Two Pointers</button>
+                <button class="topic" data-question="Explain sliding window technique">🪟 Sliding Window</button>
+            </div>
+
+            <div class="sidebar-bottom">
+                <p>AI-powered DSA learning</p>
+                <span>Learn • Practice • Improve</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div>
+                    <h1>DSA AI Mentor</h1>
+                    <p>Your personal Data Structures & Algorithms instructor</p>
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    AI Online
+                </div>
+
+            </header>
+
+
+            <!-- Chat Area -->
+            <section class="chat-area" id="chatArea">
+
+                <!-- Welcome Screen -->
+                <div class="welcome" id="welcome">
+
+                    <div class="welcome-icon">
+                        ✦
+                    </div>
+
+                    <h2>Master DSA with AI.</h2>
+
+                    <p>
+                        Ask me anything about Data Structures and Algorithms.
+                        I'll explain it in the simplest way possible.
+                    </p>
+
+
+                    <!-- Suggestions -->
+                    <div class="suggestions">
+
+                        <button class="suggestion" data-question="What is an Array?">
+                            <span>📦</span>
+                            <div>
+                                <strong>What is an Array?</strong>
+                                <small>Learn the basics</small>
+                            </div>
+                        </button>
+
+                        <button class="suggestion" data-question="Explain Binary Search">
+                            <span>🔍</span>
+                            <div>
+                                <strong>Explain Binary Search</strong>
+                                <small>Understand the concept</small>
+                            </div>
+                        </button>
+
+                        <button class="suggestion" data-question="Help me solve a DSA problem">
+                            <span>💻</span>
+                            <div>
+                                <strong>Help me solve a problem</strong>
+                                <small>Step-by-step solution</small>
+                            </div>
+                        </button>
+
+                        <button class="suggestion" data-question="Help me debug my DSA code">
+                            <span>🐛</span>
+                            <div>
+                                <strong>Debug my code</strong>
+                                <small>Find the mistake</small>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="mode-selector">
+
+                <button class="mode active" data-mode="learn">
+                    🧠 Learn
+                </button>
+
+                <button class="mode" data-mode="solve">
+                    💻 Solve
+                </button>
+
+                <button class="mode" data-mode="debug">
+                    🐛 Debug
+                </button>
+
+                <button class="mode" data-mode="practice">
+                    🎯 Practice
+                </button>
+
+            </div>
+            <!-- Input Area -->
+            <div class="input-container">
+
+                <!-- Code Editor -->
+                <div class="code-editor" id="codeEditor">
+
+                    <div class="code-editor-header">
+                        <span>💻 Java Code</span>
+
+                        <button id="clearCodeButton">
+                            Clear
+                        </button>
+                    </div>
+
+                    <textarea id="codeInput" placeholder="Paste your Java code here..." spellcheck="false"></textarea>
+
+                    <button id="analyzeCodeButton">
+                        🐛 Analyze Code
+                    </button>
+
+                </div>
+
+
+                <!-- Normal Question Input -->
+                <div class="input-box">
+
+                    <textarea id="userInput" placeholder="Ask your DSA question..." rows="1"></textarea>
+
+                    <button id="sendButton">
+                        ➤
+                    </button>
+
+                </div>
+
+
+                <p class="input-note">
+                    DSA Mentor only answers Data Structures & Algorithms questions.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
